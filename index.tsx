@@ -1,12 +1,12 @@
 /*
  * Vencord, a Discord client mod
- * Copyright (c) 2026 Venice
+ * Copyright (c) 2026
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
 import { ApplicationCommandInputType, ApplicationCommandOptionType, sendBotMessage } from "@api/Commands";
 import type { NavContextMenuPatchCallback } from "@api/ContextMenu";
-import * as DataStore from "@api/DataStore";
+import { DataStore } from "@api/DataStore";
 import { showNotification } from "@api/Notifications";
 import { definePluginSettings } from "@api/Settings";
 import { BaseText } from "@components/BaseText";
@@ -1223,7 +1223,7 @@ export default definePlugin({
     name: "DMWipe",
     description: "Bulk-delete DMs with a live progress bar and ETA. Paces off Discord's rate limit headers, filters what to keep, backs up before deleting, keeps stats, and files its own crash reports.",
 
-    authors: [{ name: "Venice", id: 0n }],
+    authors: [{ name: "Hyawii", id: 1082686076491137115 }],
     settings,
 
     contextMenus: {
